@@ -15,5 +15,8 @@ namespace CourseSubscription.Entity.Model
         public string MONTH { get; set; }
         public string STATUS { get; set; }
 
+        [ForeignKey("COU_AUTO_KEY")]
+        public virtual COURSE COURSE { get; set; }
+
     }
 }
